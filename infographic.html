@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Архитектура AI-организаций — Инфографика</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav-bar" aria-label="Навигация по разделам">
+        <div class="wrap">
+            <a href="#intro" class="btn btn-ghost">Парадигма</a>
+            <a href="#value" class="btn btn-ghost">Ценность</a>
+            <a href="#morphology" class="btn btn-ghost">Морфология</a>
+            <a href="#flow" class="btn btn-ghost">32 элемента</a>
+            <a href="#canonical" class="btn btn-ghost">Каноничная цель</a>
+        </div>
+    </nav>
+
+    <div class="wrap">
+        <header class="hero">
+            <h1>Архитектура автономных AI-организаций</h1>
+            <p class="sub">Системно-кибернетический анализ полного цикла создания ценности и исследование каноничной цели</p>
+            <span class="badge">32 элемента системы</span>
+        </header>
+
+        <section id="intro">
+            <h2>Суть парадигмы</h2>
+            <div class="card">
+                <p>Тридцатидвухшаговая архитектура описывает фазовый переход в организации сложных систем: от физической реальности до сетей автономных когнитивных агентов. Это универсальная онтологическая карта — процесс алгоритмического захвата, трансформации и масштабирования энтропии среды с конвертацией её в упорядоченную структуру (ценность). В основе — непрерывная абстракция и формирование распределённого небиологического интеллекта.</p>
+            </div>
+        </section>
+
+        <section id="value">
+            <h2>Термодинамика ценности</h2>
+            <div class="card">
+                <p><strong>Среда</strong> — источник энтропии и стохастических возмущений (рынок, социум, технологии). <strong>Проблемы</strong> — локализованный информационный потенциал, формализованные проявления средовой энтропии. <strong>Ценность</strong> — не абстрактная величина, а мера локального снижения хаоса: векторный переход от высокой неопределённости к упорядоченности.</p>
+            </div>
+            <div class="formula-block">
+                <div class="formula">ΔV = − ∫ dH(S)</div>
+                <div class="formula-desc">ΔV — сгенерированная ценность; H(S) — энтропия состояния системы. Поток ценности задаёт направленный транзит: сырьё → трансформация → результат в среду.</div>
+            </div>
+        </section>
+
+        <section id="morphology">
+            <h2>Морфология и топология</h2>
+            <div class="card">
+                <p>Управление потоком требует внутренней репрезентации реальности. Сущности — атомарные узлы информации. Состояния дискретизируют время. Переходы регламентируются правилами (логические вентили). Ограничения задают граничные условия (бюджет, мощность, время).</p>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Компонент</th>
+                            <th>Кибернетическая интерпретация</th>
+                            <th>Практический эквивалент</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Сущность</td><td>Информационный узел графа</td><td>Профиль пользователя, заказ</td></tr>
+                        <tr><td>Состояние</td><td>Точка в фазовом пространстве</td><td>Статус: Оплачен, В пути</td></tr>
+                        <tr><td>Переход</td><td>Функция трансформации</td><td>Изменение статуса заказа</td></tr>
+                        <tr><td>Правило</td><td>Логический предикат</td><td>Проверка доступности средств</td></tr>
+                        <tr><td>Ограничение</td><td>Топологическая граница</td><td>Лимит API-запросов</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="flow">
+            <h2>Полный цикл: 32 элемента</h2>
+            <p class="flow-intro">Замкнутый кибернетический контур от среды до коллективного интеллекта. Нажмите на блок фазы, чтобы развернуть или свернуть список.</p>
+            <div class="section-actions">
+                <button type="button" class="btn btn-secondary" id="btn-expand-all">Развернуть всё</button>
+                <button type="button" class="btn btn-secondary" id="btn-collapse-all">Свернуть всё</button>
+            </div>
+
+            <div class="loop-diagram">
+                <span class="loop-node env">Среда</span>
+                <span class="loop-arrow">→</span>
+                <span class="loop-node value">Поток ценности</span>
+                <span class="loop-arrow">→</span>
+                <span class="loop-node">Морфология</span>
+                <span class="loop-arrow">→</span>
+                <span class="loop-node">Операции</span>
+                <span class="loop-arrow">→</span>
+                <span class="loop-node">AI-агенты</span>
+                <span class="loop-arrow">→</span>
+                <span class="loop-node collective">Коллективный интеллект</span>
+                <span class="loop-arrow">→</span>
+                <span class="loop-node env">Среда</span>
+            </div>
+
+            <div class="detail-card card" id="detail-card">
+                <p class="detail-placeholder" id="detail-placeholder">Выберите элемент в списке фаз ниже, чтобы увидеть описание.</p>
+                <div class="detail-content hidden" id="detail-content">
+                    <span id="detail-phase" class="detail-phase"></span>
+                    <h3 id="detail-title" class="detail-title"></h3>
+                    <span id="detail-number" class="detail-number"></span>
+                    <p id="detail-desc" class="detail-desc"></p>
+                    <h4 class="detail-examples-title hidden" id="examples-title">Примеры / сущности</h4>
+                    <div id="detail-examples" class="detail-examples"></div>
+                    <div class="detail-flow hidden" id="detail-flow">
+                        <h4 class="detail-flow-title">Логика перехода</h4>
+                        <div id="detail-flow-text" class="detail-flow-text"></div>
+                    </div>
+                    <div class="detail-nav">
+                        <button type="button" class="btn btn-secondary" id="btn-prev">← Назад</button>
+                        <button type="button" class="btn btn-primary" id="btn-next">Далее →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evolution-block card">
+                <h3 class="evolution-title">Эволюция сложности системы</h3>
+                <p class="evolution-desc">Рост автономии и сложности по этапам (1–32). Клик по столбцу — выбор элемента.</p>
+                <div class="evolution-chart" id="evolution-chart"></div>
+            </div>
+
+            <div class="phases">
+                <div class="phase foundations" data-phase="foundations">
+                    <div class="phase-header"><span>1. Основы</span><span class="count">4 элемента</span><span class="phase-arrow">▼</span></div>
+                    <div class="phase-items">
+                        <div class="step-grid">
+                            <span class="step" data-step-id="1"><span class="num">1</span>Environment</span>
+                            <span class="step" data-step-id="2"><span class="num">2</span>Problems</span>
+                            <span class="step" data-step-id="3"><span class="num">3</span>Value Creation</span>
+                            <span class="step" data-step-id="4"><span class="num">4</span>Value Flow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="phase mechanics" data-phase="mechanics">
+                    <div class="phase-header"><span>2. Механика</span><span class="count">5 элементов</span><span class="phase-arrow">▼</span></div>
+                    <div class="phase-items">
+                        <div class="step-grid">
+                            <span class="step" data-step-id="5"><span class="num">5</span>Entities</span>
+                            <span class="step" data-step-id="6"><span class="num">6</span>States</span>
+                            <span class="step" data-step-id="7"><span class="num">7</span>Transitions</span>
+                            <span class="step" data-step-id="8"><span class="num">8</span>Rules</span>
+                            <span class="step" data-step-id="9"><span class="num">9</span>Constraints</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="phase operations" data-phase="operations">
+                    <div class="phase-header"><span>3. Операции</span><span class="count">9 элементов</span><span class="phase-arrow">▼</span></div>
+                    <div class="phase-items">
+                        <div class="step-grid">
+                            <span class="step" data-step-id="10"><span class="num">10</span>Processes</span>
+                            <span class="step" data-step-id="11"><span class="num">11</span>Workflows</span>
+                            <span class="step" data-step-id="12"><span class="num">12</span>Tasks</span>
+                            <span class="step" data-step-id="13"><span class="num">13</span>Resources</span>
+                            <span class="step" data-step-id="14"><span class="num">14</span>Roles</span>
+                            <span class="step" data-step-id="15"><span class="num">15</span>Tools</span>
+                            <span class="step" data-step-id="16"><span class="num">16</span>Data</span>
+                            <span class="step" data-step-id="17"><span class="num">17</span>Metrics</span>
+                            <span class="step" data-step-id="18"><span class="num">18</span>Feedback</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="phase evolution" data-phase="evolution">
+                    <div class="phase-header"><span>4. Эволюция</span><span class="count">3 элемента</span><span class="phase-arrow">▼</span></div>
+                    <div class="phase-items">
+                        <div class="step-grid">
+                            <span class="step" data-step-id="19"><span class="num">19</span>Optimization</span>
+                            <span class="step" data-step-id="20"><span class="num">20</span>Automation</span>
+                            <span class="step" data-step-id="21"><span class="num">21</span>Software Systems</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="phase ai" data-phase="ai">
+                    <div class="phase-header"><span>5. AI Архитектура</span><span class="count">7 элементов</span><span class="phase-arrow">▼</span></div>
+                    <div class="phase-items">
+                        <div class="step-grid">
+                            <span class="step" data-step-id="22"><span class="num">22</span>Agent Architecture</span>
+                            <span class="step" data-step-id="23"><span class="num">23</span>Planner Agents</span>
+                            <span class="step" data-step-id="24"><span class="num">24</span>Execution Agents</span>
+                            <span class="step" data-step-id="25"><span class="num">25</span>Verification Agents</span>
+                            <span class="step" data-step-id="26"><span class="num">26</span>Memory Systems</span>
+                            <span class="step" data-step-id="27"><span class="num">27</span>Decision Engine</span>
+                            <span class="step" data-step-id="28"><span class="num">28</span>Goal Management</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="phase autonomy" data-phase="autonomy">
+                    <div class="phase-header"><span>6. Автономия</span><span class="count">4 элемента</span><span class="phase-arrow">▼</span></div>
+                    <div class="phase-items">
+                        <div class="step-grid">
+                            <span class="step" data-step-id="29"><span class="num">29</span>AI Operating System</span>
+                            <span class="step" data-step-id="30"><span class="num">30</span>Autonomous Org.</span>
+                            <span class="step" data-step-id="31"><span class="num">31</span>Network of AI Systems</span>
+                            <span class="step" data-step-id="32"><span class="num">32</span>Collective Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="canonical">
+            <h2>Каноничная цель архитектуры</h2>
+            <div class="canonical">
+                <h3>Алгоритмический захват энтропии</h3>
+                <p class="goal-text">Каноничная цель — полное отчуждение процесса трансформации энтропии (создания ценности) от биологических и когнитивных ограничений человека, с последующим построением самомасштабирующегося, гомеостатического коллективного интеллекта.</p>
+                <div class="imperatives">
+                    <div class="imperative">
+                        <strong>1. Императив элиминации биологической задержки</strong>
+                        <p>Человек — драйвер и главный ограничитель. Архитектура последовательно извлекает человека из контура: роль → автоматизация → замещение когнитивного аппарата агентами (планировщик, исполнитель, верификатор). Цель — непрерывная генерация ценности на субмиллисекундных скоростях без биологического трения.</p>
+                    </div>
+                    <div class="imperative">
+                        <strong>2. Императив алгоритмической идеальности и коллапса издержек</strong>
+                        <p>Идеальная система: масса и сложность → 0, полезность → ∞. Формализация сущностей и математизация состояний конвертируют реальность в информационный поток. AI OS и сети автономных систем схлопывают транзакционные издержки; энергия идёт только на полезную работу.</p>
+                    </div>
+                    <div class="imperative">
+                        <strong>3. Императив макро-кибернетической эволюции</strong>
+                        <p>Переход от локальной автономии к распределённому коллективному интеллекту. Не одна монополия, а цифровое ДНК новой эволюции: автономные организации на гиперликвидных рынках формируют сложные адаптивные системы. Эмерджентный коллективный разум решает задачи масштаба среды (климат, глобальные ресурсы, макроэкономика), недоступные отдельным человеческим институтам.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <p>Супер-схема архитектуры автономных AI-организаций — не только технический манифест, а строгий онтологический чертёж перехода к постбиологической экономической формации. Каноничная цель — запуск необратимого процесса кибернетической эволюции: хаотичная среда → структурированный, познающий себя и самооптимизирующийся макро-организм, где генерация ценности становится базовым физическим законом новой цифровой реальности.</p>
+            </div>
+        </section>
+
+        <footer>
+            По материалам документа «Архитектура автономных AI-организаций: Системно-кибернетический анализ полного цикла создания ценности и исследование каноничной цели». HTML, CSS и JavaScript в отдельных файлах.
+        </footer>
+    </div>
+
+    <button type="button" class="btn back-to-top" id="back-to-top" aria-label="Наверх">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
